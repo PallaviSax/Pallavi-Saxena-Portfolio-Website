@@ -1,0 +1,45 @@
+#MBA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Adjust based on your layout */
+    margin: 0
+  }
+  
+  #MBA img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;    /* Maintain aspect ratio */
+  }
+  
+  /* Center the content text */
+  #contentexp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center the text inside the container */
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: black;
+    line-height: 1.6;
+    width: 80%;  /* Adjust width based on your design */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #contentexp a {
+    color: #0066cc;          /* Default link color */
+    text-decoration: none;   /* Remove underline */
+    font-weight: normal;     /* Match the weight of the surrounding text */
+  }
+  
+  #contentexp a:hover {
+    text-decoration: underline;  /* Underline on hover */
+    color: #0044cc;              /* Change color on hover */
+  }
+  
+  /* Optional: Add some margin to the paragraphs for spacing */
+  #contentexp p {
+    margin-bottom: 20px;
+  }  

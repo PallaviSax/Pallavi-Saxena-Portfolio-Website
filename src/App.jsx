@@ -1,11 +1,13 @@
 import Home from "./pages/Home"
-import Works from "./pages/Works"
-import Fun from "./pages/Fun"
+import Experience from "./pages/Experience"
+import Interests from "./pages/Interests"
 import { Routes, Route, HashRouter } from "react-router-dom";
 
 import './App.css'
 import NavigationBar from './navbar.jsx'
 import PallaviPicture from './images/PallaviProfilePic.png'
+import AcapellaPic from './images/PallaviAcapella.png'
+
 function App() {
   return (
     <>
@@ -15,8 +17,8 @@ function App() {
       <Routes>
       <Route path="/" element = {<Home />}/>
       <Route path="/Home" element = {<Home />}/>
-      <Route path="/Works" element = {<Works />}/>
-      <Route path="/Fun" element = {<Fun />}/>
+      <Route path="/Experience" element = {<Experience />}/>
+      <Route path="/Interests" element = {<Interests />}/>
       </Routes>
       </div>
       </HashRouter>

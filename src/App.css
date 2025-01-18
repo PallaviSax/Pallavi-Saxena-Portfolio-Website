@@ -1,16 +1,19 @@
-@font-face{
-	font-family: Roboto;
-	src: URL(../public/Roboto-Regular.ttf);
+@font-face {
+  font-family: 'Playfair Display', serif;
+  src: (url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'));
 }
 
-#Heading{
-	font-family: Roboto;
-	font-size: 80px;
-	color: blue;
+#Heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  color: rgba(0, 0, 255, 0.271);
 }
 
-#root{
-  width:1280px;
+#root {
+  width: 100%;
+  background-image: linear-gradient(to right,
+    rgb(234, 231, 224), rgb(220, 219, 214), rgb(237, 235, 229)
+  );
 }
 
 /* We can design the ids or classes for the navbar here */
@@ -24,8 +27,9 @@ nav {
 }
 
 #name {
+  font-family: 'Playfair Display', serif;
   margin-left: 30px;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 #navbar {
@@ -46,5 +50,89 @@ nav {
   font-size: 1.8rem;
   font-weight: 600;
   color: black;
+}
+
+/* Center content horizontally and vertically */
+#content {
+  display: flex;                  /* Use flexbox to align elements side by side */
+  justify-content: center;        /* Center the content horizontally */
+  align-items: center;            /* Center the content vertically */
+  margin: 0;                      /* Remove any external margins */
+  min-height: 100vh;               /* Full screen height */
+  font-family: 'Playfair Display', serif;
+  color: black;
+  text-align: left;                /* Left-align the text within the paragraph */
+  gap: 125px;                       /* Space between image and text */
+}
+
+/* Global styles for all images (for fallback or common settings) */
+img {
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Specific style for Home page image */
+#homeImg {
+  width: 400px;   /* Width for the home page image */
+  height: auto;   /* Auto height to maintain aspect ratio */
+  margin-top: 0
+}
+
+/* Specific style for another section's image */
+#expImg {
+  width: 600px;   /* Adjust width for a different image */
+  height: auto;   /* Auto height */
+  margin-top: 30px;
+}
+
+
+
+#contentp {
+  font-family: 'Playfair Display', serif;
+  color: black;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 600px;                /* Prevent text from stretching too wide */
+  text-align: center;              /* Center the paragraph text */
+  margin: 0;                       /* Remove any unwanted margins */
+}
+
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the image and text */
+#icontent {
+  display: flex;                  /* Use Flexbox for layout */
+  flex-direction: column;         /* Stack elements vertically */
+  align-items: center;            /* Center elements horizontally */
+  justify-content: center;        /* Center elements vertically */
+  text-align: center;             /* Center the text */
+  min-height: 100vh;              /* Full viewport height */
+  padding: 20px;                  /* Add some padding around the content */
+}
+
+#iImg {
+  width: 900px;                   /* Set image width */
+  height: auto;                   /* Maintain aspect ratio */
+  margin-bottom: 20px;            /* Add space below the image */
+  margin-top: 10px
+}
+
+#vid {
+  margin-bottom: 20px;            /* Add space below the image */
+  margin-top: 20px
+}
+
+#icontentp {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: black;
+  line-height: 1.6;
+  max-width: 800px;               /* Set a max-width for the text */
+  text-align: center;             /* Center the paragraph text */
+  margin-top: 0;                  /* Remove margin from top */
 }
 
