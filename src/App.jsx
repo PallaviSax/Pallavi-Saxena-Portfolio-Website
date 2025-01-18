@@ -1,4 +1,4 @@
-import Home from "./pages/Home"
+import Home from "./pages/Home.jsx"
 import Experience from "./pages/Experience"
 import Interests from "./pages/Interests"
 import { Routes, Route, HashRouter } from "react-router-dom";
